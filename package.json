@@ -1,4 +1,17 @@
 {
+  "name": "oecu-discord-bot",
+  "version": "1.0.0",
+  "description": "Bot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "nsktatata@gmail.com",
+  "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
     "@discordjs/rest": "^0.3.0",
