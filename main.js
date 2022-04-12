@@ -3,8 +3,11 @@ const DEBUG = false;//true;
 // imports
 const { IntegrationExpireBehavior } = require('discord-api-types/v10');
 const { Client, Intents, Permissions, Message, Role } = require('discord.js');
-const { token } = require('./config.json');
+//const { token } = require('./config.json');
+require('dotenv').config();
+const token = process.env.TOKEN;
 
+// client
 const client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
@@ -25,7 +28,7 @@ client.once('ready', () => {
     setActivity();
     setInterval(() => {
         setActivity();
-    }, 5000);
+    }, 1000);
 });
 
 // 参加時役職付与
